@@ -39,29 +39,43 @@ An online Integrated Development Environment (IDE) for writing, running, and sav
    ```bash
    git clone https://github.com/inevitable-ank/Online_IDE.git
    cd Online_IDE
+   ````
+
 
 2. **Install backend dependencies:**:
+    ```bash
     cd backend
     npm install
+    ````
 
 3. **Create a .env file in the backend folder and add the following:**
+    ```bash
     MONGO_URI=<your-mongodb-uri>
     JWT_SECRET=<your-secret-key>
     PORT=5000
+    ````
 
 4. **Start the backend:**
+    ```bash
     npm start
+    ````
 
 ### Frontend Setup
 
 1. **Navigate to the frontend:**
+    ```bash
     cd ../frontend
+    ````
     
 2. **Install frontend dependencies:**
+    ```bash
     npm install
+    ````
 
 3. **Start the frontend:**
+    ```bash
     npm run dev
+    ````
 
 4. **Access the application:**
 Open http://localhost:3000 in your browser.
