@@ -1,5 +1,16 @@
-let mongoose = require("mongoose")
-mongoose.connect('mongodb://localhost:27017/CodeIDE')
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+
+// Load environment variables from the .env file
+dotenv.config();
+
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB connection error:', err));
+
 
 const projectSchema = new mongoose.Schema({
   title: String,
