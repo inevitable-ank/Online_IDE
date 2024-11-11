@@ -1,5 +1,9 @@
-let mongoose = require("mongoose")
-mongoose.connect('mongodb://localhost:27017/CodeIDE')
+const dotenv = require('dotenv');
+const path = require('path');
+const mongoose = require('mongoose');
+
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+mongoose.connect(process.env.MONGODB_URI);
 
 let userSchema = new mongoose.Schema({
     name: String,
