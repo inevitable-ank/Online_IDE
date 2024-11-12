@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
-import Signup from "./pages/signup";
+import Signup from "./pages/CreateAccount";
 import Login from "./pages/Login";
 import Editor from "./pages/Editor";
 
